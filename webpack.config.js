@@ -4,7 +4,7 @@ const singleSpaDefaults = require("webpack-config-single-spa-react");
 module.exports = (webpackConfigEnv = {}) => {
   const defaultConfig = singleSpaDefaults({
     orgName: "micro",
-    projectName: "dapp",
+    projectName: "micro-dapp",
     webpackConfigEnv,
   });
 
