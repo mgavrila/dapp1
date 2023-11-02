@@ -5,7 +5,7 @@ export default function Root(props) {
   return (
     <BrowserRouter>
       <section>
-        <Home />
+        <Home {...props} />
       </section>
     </BrowserRouter>
   );
