@@ -1,3 +1,12 @@
+import { BrowserRouter } from 'react-router-dom';
+import { Home } from './components/Home';
+
 export default function Root(props) {
-  return <section>{props.name} is mounted!</section>;
+  return (
+    <BrowserRouter>
+      <section>
+        <Home />
+      </section>
+    </BrowserRouter>
+  );
 }
