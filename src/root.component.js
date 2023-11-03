@@ -1,12 +1,17 @@
-import { BrowserRouter } from 'react-router-dom';
-import { Home } from './components/Home';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { routes } from './routes';
 export default function Root(props) {
   return (
     <BrowserRouter>
-      <section>
-        <Home {...props} />
-      </section>
+      <Routes>
+        {routes.map((route) => (
+          <Route
+            path={route.href}
+            key={`route-key-'${route.name}`}
+            element={<route.component {...props} />}
+          />
+        ))}
+      </Routes>
     </BrowserRouter>
   );
 }

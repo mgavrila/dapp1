@@ -1,10 +1,20 @@
+import { Home } from './components/Home';
+import { Page1 } from './components/Page1';
+import { Page2 } from './components/Page2';
 export const routes = [
   {
-    name: 'Apps',
-    href: '/dapp2'
+    name: 'Home',
+    href: '/dapp1',
+    component: Home
   },
   {
-    name: 'Templates',
-    href: '/dapp1/test'
+    name: 'Page1',
+    href: '/dapp1/page1',
+    component: Page1
+  },
+  {
+    name: 'Page2',
+    href: '/dapp1/page2',
+    component: Page2
   }
 ];
